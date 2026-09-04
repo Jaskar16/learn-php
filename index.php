@@ -1,11 +1,19 @@
 <?php
-$test = 'hello';
-$test = 'hello' . ' world';
-$test .= '!';
-$name = 'Jaskar';
-$age = 25;
-$test = "My name is $name and I am $age years old.";
-$test = "hello\n\nworld";
-$letter = 'a';
-$letter++;
+$test = true;
+$test = false;
+$test = true && true;
+$test = true || true;
+$test = !false;
+$test = 10 > 5;
+$test = 10 < 5;
+$test = 10 < 10;
+$test = 10 == 10;
+$test = 10 === 10;
+$test = 10 >= 10;
+$test = 10 <= 10;
+$test = 10 != 10;
+$test = 10 !== 10;
+$test = 10 == '10';
+$test = 10 === '10';
+$test = true && false || (true && !true);
 var_dump($test);
