@@ -22,18 +22,13 @@ class Box{
 }
 
 
-$box1 = new Box();
-$box1->width = 10;
-$box1->length = 20;
-$box1->height = 30;
-$box1->open();
-var_dump($box1);
-var_dump($box1->volume());
+$num = 1;
+$num2 = &$num1;
+$num1 = 2;
+var_dump($num1, $num2);
 
 $box1 = new Box();
-$box1->width = 30;
-$box1->length = 40;
-$box1->height = 50;
-var_dump($box2);
-var_dump($box2->volume());
-var_dump($box1);
+$box1->width = 1;
+$box2 = clone $box1;
+$box1->width = 2;
+var_dump($box1->width, $box2->width);
