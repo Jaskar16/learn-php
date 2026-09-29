@@ -1,15 +1,15 @@
 <?php include __DIR__ . '/partials/header.php'; ?>
 <main class="container">
   <?php if(isset($_GET['name']) && isset($_GET['age'])): ?>
-  <h1>Hello <?= $_GET['name'] ?? 'Nameless'?>! You are <?= $_GET['age'] ?? 'infinite' ?> years old</h1>
+    <h1>Hello <?=$_GET['name'] ?? 'Nameless'?>! You are <?=$_GET['age'] ?? 'Infinite' ?> years old!</h1>
   <?php endif; ?>
   <form action="/forms" method="POST">
     <label>
       Name:
-      <input name="name" type="text" placeholder="name">
+      <input name="name" type="text" placeholder="Name">
     </label>
-    <label for="">age:</label>
-    <input age="age" id="age" type="number" placeholder="age">
+    <label for="age">Age:</label>
+    <input name="age" id="age" type="number" placeholder="Age">
 
     <input type="submit" value="Send">
     <button>Send</button>
