@@ -18,6 +18,7 @@
             <div class="btn-group">
               <a href="/admin/users/view?id=<?= $user->id ?>" class="btn btn-info">View</a>
               <a href="/admin/users/edit?id=<?= $user->id ?>" class="btn btn-warning">Edit</a>
+              <a href="/admin/users/delete?id=<?= $user->id ?>" class="btn btn-danger" onclick="return confirm('Delete this user?')">Delete</a>
             </div>
           </td>
         </tr>
